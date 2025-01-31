@@ -1,0 +1,22 @@
+<html>
+    <head>
+        <title> Stone!Paper!Scirssor!</title>
+            <link rel="stylesheet" href="static/style.css">
+    </head>
+    <body>
+        <h2>Stone!Paper!Scirssor</h2>
+        <form method="POST">
+            <button type="Submit" name="choice" value="Stone">Stone!</button>
+            <button type="Submit" name="choice" value="Paper">Paper!</button>
+            <button type="Submit" name="choice" value="Scirssor">Scirssor!
+            </button>
+
+        </form>
+        {% if result %}
+        <h1>your_choice:{{my_choices}}</h1>
+        <h2>computer_choice:{{computer_choices}}</h2>
+        <h2>{{ result }}</h2>
+        {% endif %}
+
+    </body>
+</html>
